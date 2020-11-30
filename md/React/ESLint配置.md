@@ -2,12 +2,13 @@
  * @Author: tangdaoyong
  * @Date: 2020-11-25 09:45:57
  * @LastEditors: tangdaoyong
- * @LastEditTime: 2020-11-25 10:23:40
+ * @LastEditTime: 2020-11-25 10:41:51
  * @Description: file content
 -->
 # ESLint配置
 
-[官网](https://links.jianshu.com/go?to=https%3A%2F%2Fgithub.com%2Feslint%2Feslint)
+[官网](https://eslint.bootcss.com/)
+[VSCode 使用 ESLint + Prettier 来统一 JS 代码](https://www.cnblogs.com/xjnotxj/p/10828183.html)
 [vscode eslint](https://blog.csdn.net/weixin_34289744/article/details/91370709)
 
 ## 安装
