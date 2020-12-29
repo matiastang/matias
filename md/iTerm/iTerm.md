@@ -2,13 +2,59 @@
  * @Author: tangdaoyong
  * @Date: 2020-12-28 17:43:32
  * @LastEditors: tangdaoyong
- * @LastEditTime: 2020-12-28 18:11:26
+ * @LastEditTime: 2020-12-29 09:19:43
  * @Description: iTerm
 -->
 # iTerm
 
 [powerline](https://github.com/powerline/fonts)
+[iterm2 终端问题整理](https://blog.csdn.net/chezhan1972/article/details/100720352)
+[iTerm2 + Oh My Zsh + Solarized color scheme + Meslo powerline font + [Powerlevel9k] - (macOS)（推荐](https://gist.github.com/kevin-smets/8568070)
+[iTerm2 + oh my zsh + solarized + Meslo powerline font (OS X / macOS)](https://www.jianshu.com/p/0ff3269bc261)
+[Mac 下终端配置（item2 + oh-my-zsh + solarized 配色方案）](http://zhuxin.tech/2017/09/21/zsh%E9%85%8D%E7%BD%AE/)
+[MAC 下 iTerm 主题配置](https://www.zybuluo.com/Sweetfish/note/636550)
 
+## 安装
+
+### zsh自动提示与命令补全
+
+`zsh`自动提示与命令补全比`iTerm2`自带的更强大的命令提示与补全
+
+1. 克隆仓库到本地 `~/.oh-my-zsh/custom/plugins` 路径下
+```
+git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+```
+```
+cd ~/.oh-my-zsh/custom/plugins
+git clone git://github.com/zsh-users/zsh-autosuggestions
+```
+2. 用 `vim` 编辑 `.zshrc` 文件，找到插件设置命令，默认是 `plugins=(git)` ，我们把它修改为`plugins=(zsh-autosuggestions git)`
+```
+vim ~/.zshrc
+```
+3. 加载.zshrc配置
+```
+source ~/.zshrc
+```
+4. 如果重新打开终端时可能看不到变化，可能你的字体颜色太淡了，我们把其改亮一些，用 `vim` 编辑 `zsh-autosuggestions.zsh` 文件，修改`ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=10'`
+```
+cd ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+```
+
+### zsh语法高亮
+
+1. 使用`homebrew`包管理工具安装 `zsh-syntax-highlighting` 插件
+```
+brew install zsh-syntax-highlighting
+```
+2. 配置.zshrc文件，最后一行添加
+```
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+```
+3. 加载.zshrc配置
+```
+source ~/.zshrc
+```
 ## 问题
 
 ### 波浪线两边的两个问号
